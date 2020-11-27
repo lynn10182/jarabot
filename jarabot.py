@@ -4,11 +4,9 @@ from random import randint
 import datetime
 import random
 import asyncio
+import os
 
 d = datetime.datetime.now()
-
-token = "NzYzMjgxMDA2Mzg3MTM0NTQ1.X31a1A.l81a869jjSpp1KHkwnlstpEr5SA"
-
 client = commands.Bot(command_prefix="자라야 ")
 
 @client.event
@@ -326,4 +324,5 @@ async def 크시(ctx, *args):
 async def on_command_error(ctx, error):
     await ctx.send("무슨 말인지 모름 ㅈㅅ... 커맨드 추가를 원한다면 봇리니를 멘션해줘!")
 
-client.run(token)
+access_token = os.env['TOKEN']
+client.run(access_token)
