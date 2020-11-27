@@ -1,1 +1,1 @@
-worker: python boreebot.py
+worker: python jarabot.py
