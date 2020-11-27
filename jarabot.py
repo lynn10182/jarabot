@@ -78,10 +78,6 @@ async def 리니(ctx, *args):
 async def 오늘(ctx, *args):
     await ctx.send(f"오늘은 {datetime.date.today()} !")
 
-@client.command()
-async def 시간(ctx, *args):
-    await ctx.send(f" 봇이 켜진 시각은 {d.hour}시 {d.minute}분 {d.second}초야! 봇 호스팅이 안되는 관계로 현재 시각은 나타낼 수 없어...")
-
 @client.command() 
 async def 자라(ctx, *args):
     await ctx.send("내 대사다 따라하지 말고 자라")
