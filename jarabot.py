@@ -202,9 +202,9 @@ async def 홍보서버(ctx, *args):
 
 @client.command()
 async def 알콩달콩(ctx, *args):
-    await ctx.send("우리 서버의 2인 음성방! :face_with_hand_over_mouth: 둘이서 오붓한 시간을 가질 수 있...")
+    message2 = await ctx.send("우리 서버의 2인 음성방! :face_with_hand_over_mouth: 둘이서 오붓한 시간을 가질 수 있...")
     await asyncio.sleep(3)
-    await message.edit(content="2인 음성방이야! ...자라 ㅋ")
+    await message2.edit(content="2인 음성방이야! ...자라 ㅋ")
 
 @client.command()
 async def 자기소개(ctx, *args):
