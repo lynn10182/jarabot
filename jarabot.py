@@ -1,10 +1,10 @@
 import discord
 from discord.ext import commands
+import os
 from random import randint
 import datetime
 import random
 import asyncio
-import os
 
 d = datetime.datetime.now()
 client = commands.Bot(command_prefix="자라야 ")
