@@ -368,7 +368,7 @@ async def 크시(ctx, *args):
 
 @client.event
 async def on_command_error(ctx, error):
-    await ctx.send("무슨 말인지 모름 ㅈㅅ... 커맨드 추가를 원한다면 봇리니를 멘션해줘!"
+    await ctx.send("무슨 말인지 모름 ㅈㅅ... 커맨드 추가를 원한다면 봇리니를 멘션해줘!")
                    
 _token_ = os.environ['JARA_TOKEN']
 client.run(_token_)
